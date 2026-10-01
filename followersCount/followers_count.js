@@ -14,6 +14,11 @@ function checkCountValue() {
   }
 }
 
+function resetCount() {
+  count=0; // réinitialise le compteur
+  displayCount(); // Affiche le compte
+  alert("Compteur réinitialisé");
+}
 
 function displayCount() {
   document.getElementById('countDisplay').innerHTML=count; // Affiche le compte dans l'HTML
