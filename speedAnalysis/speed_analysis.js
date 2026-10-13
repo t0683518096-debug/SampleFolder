@@ -43,5 +43,6 @@ function endTest() {
     outputDiv.innerHTML = "<h2>Résultats du test de dactylographie :</h2>" +
         "<p>Mots tapés : " + typedWords + "</p>" +
         "<p>Temps écoulé : " + timeElapsed.toFixed(2) + " secondes</p>" +
-        "<p>Mots par minute (WPM) : " + wpm + "</p>";
+        "<p>Mots par minute (WPM) : " + wpm + "</p>"+
+        "<p>Longueur saisie : " + userTypedText.length + "</p>";
     }
