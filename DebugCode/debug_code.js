@@ -54,7 +54,7 @@ function performOperationD() {
     // Check if inputs are valid numbers
     if (!isNaN(num1) && !isNaN(num2)) {
     // Perform the operation
-            let result = d(num1, num2);
+            let result = division(num1, num2);
 
             // Display the result
             displayResult(result);
@@ -91,14 +91,15 @@ function division(a, b) {
     // Introduce a debugger statement to pause execution
     debugger;
     try {
+        if(b==0) throw new console.error("Division par 0 impossible");
         r=a / b
     }
-    catch {
-        alert("le diviseur ne peut pas être nul")
+    catch(e) {
+        alert("le diviseur ne peut pas être nul !")
         return 0
     }
     // Multiply the numbers
-    return a / b;
+    return r;
 }
 
 function displayResult(result) {
