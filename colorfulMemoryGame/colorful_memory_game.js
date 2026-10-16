@@ -59,7 +59,7 @@ function checkMatch() {
 
 
 function startGame() {
-    let timeLeft = 30;
+    let timeLeft = 60;
     startbtn.disabled = true;
     score = 0; // Réinitialiser le score à zéro
     scoreElement.textContent = `Score: ${score}`;
